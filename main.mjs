@@ -88,12 +88,12 @@ export default {
         };
 
         const updateLoad = () => {
-            downloadData("com.nxp.poc.CpuMetrics", "loadavg")
+            downloadData("com.example.poc.CpuMetrics", "loadavg")
                 .then(values => setValues(loadChart, values));
         };
 
         const updateTemp = () => {
-            downloadData("com.nxp.poc.CpuTemp", "temp")
+            downloadData("com.example.poc.CpuTemp", "temp")
                 .then(values => setValues(tempChart, values));
         };
 
